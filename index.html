@@ -1,155 +1,163 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homyfood</title>
+    <title>Ohmyfood</title>
     <meta
-      name="description"
-      content="ohmyfood, reservez le menu qui vous convient"
+    name="description"
+    content="Ohmyfood, reservez le menu qui vous convient."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap"
+    rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <img
+    <img
         src="./assets/images/logo/ohmyfood.png"
-        alt="Logo du site Homyfood"
-      />
+        alt="Logo du site Ohmyfood"
+    />
     </header>
     <main>
-      <div id="localisation">
-        <i></i>
+    <div id="localisation">
         <label for="search"><i class="fa-solid fa-location-dot"></i></label>
         <input
-          type="search"
-          id="search"
-          name="Ville"
-          placeholder="Paris, Belleville"
+        type="search"
+        id="search"
+        name="City"
+        placeholder="Paris, Belleville"
         />
-      </div>
-      <section id="exploration">
-        <h4>Réservez le menu qui vous convient</h4>
+    </div>
+    <section id="exploration">
+        <h1>Réservez le menu qui vous convient</h1>
         <p>
-          Découvrez des restaurants d'exception, séléctionnés par nos soins.
+        Découvrez des restaurants d'exception, séléctionnés par nos soins.
         </p>
-        <a href="#"><button>Explorer nos restaurants</button></a>
-      </section>
-      <section id="working">
-        <h4>Fonctionnement</h4>
-        <ul>
-          <li>
-            <button>
-              <a href="#"
-                ><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un
-                réstaurant</a
-              >
-            </button>
-          </li>
-          <li>
-            <button>
-              <a href="#"
-                ><i class="fa-solid fa-ellipsis-vertical"></i
-                ><i class="fa-solid fa-bars"></i>Composez votre menu</a
-              >
-            </button>
-          </li>
-          <li>
-            <button>
-              <a href="#"
-                ><i class="fa-solid fa-store"></i>Dégustez au restaurant</a
-              >
-            </button>
-          </li>
-        </ul>
-      </section>
-      <section id="restaurants">
-        <h4>restaurants</h4>
+        <a href="#">Explorer nos restaurants</a>
+    </section>
+    <section id="working">
+        <h1>Fonctionnement</h1>
+        <ol>
+        <li>
+            <div>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <p>Choisissez un restaurant</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <i class="fa-light fa-list"></i>
+            <p>Composez votre menu</p>
+            </div>
+        </li>
+        <li>
+            <div>
+            <i class="fa-solid fa-store"></i>
+            <p>Dégustez au restaurant</p>
+            </div>
+        </li>
+        </ol>
+    </section>
+    <section id="restaurants">
+        <h1>restaurants</h1>
         <article>
-          <a href="#">
             <figure>
-              <img
-                src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt="Restaurant La note enchantée"
-              />
-              <figcaption>
-                <h3>La palette du goût</h3>
-                <p>Ménilmontant</p>
-                <i class="fa-regular fa-heart"></i>
-              </figcaption>
+                <a href="#">
+                    <img
+                    src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                    alt="Une assiette gastronomique du restaurant La palette du goût à Ménilmontant."/>
+                </a>
+                <a href="#">
+            <figcaption>
+                    <h3>La palette du goût</h3>
+                    <p>Ménilmontant</p>
+                </a>
+            </figcaption>
+            <i class="fa-regular fa-heart"></i>
             </figure>
-          </a>
         </article>
         <article>
-          <a href="#">
             <figure>
-              <img
+                <a href="#">
+            <img
                 src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                alt="Restaurant La palette du goût à Charonne"
-              />
-              <figcaption>
+                alt="Une assiette d'un plat en sauce familial du restaurant La note enchantée à Charonne."/>
+                </a>
+                <a href="#">
+            <figcaption>
                 <h3>La palette du goût</h3>
                 <p>Charonne</p>
+                </a>
+            </figcaption>
                 <i class="fa-regular fa-heart"></i>
-              </figcaption>
             </figure>
-          </a>
         </article>
         <article>
-          <a href="#">
             <figure>
-              <img
+                <a href="#">
+            <img
                 src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                alt="Restaurant À la française à Cité Rouge"
-              />
-              <figcaption>
+                alt="Une assiette avec une tartine salade/oeuf poché du restaurant À la française à Cité Rouge."/>
+                </a>
+                <a href="#">
+            <figcaption>
                 <h3>À la française</h3>
                 <p>Cité Rouge</p>
+            </a>
+            </figcaption>
                 <i class="fa-regular fa-heart"></i>
-              </figcaption>
             </figure>
-          </a>
+        </a>
         </article>
         <article>
-          <a href="#">
             <figure>
-              <img
+            <a href="#">
+            <img
                 src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                alt="Restaurant Le délice des sens à Folie-Méricourt"
-              />
-              <figcaption>
+                alt="Une assiette rectangulaire avec du poisson en sauce et des légumes du restaurant Le délice des sens à Folie-Méricourt."/>
+            </a>
+            <a href="#">
+            <figcaption>
                 <h3>Le délice des sens</h3>
                 <p>Folie-Méricourt</p>
-                <i class="fa-regular fa-heart"></i>
-              </figcaption>
+            </a>
+        </figcaption>
+        <i class="fa-regular fa-heart"></i>
             </figure>
-          </a>
+        </a>
         </article>
-      </section>
+    </section>
     </main>
     <footer>
-        <img
+    <img
         src="./assets/images/logo/ohmyfood.png"
-        alt="Logo du site Homyfood"
-        />
-        <ul>
-            <li><a href="#"><i class="fa-solid fa-utensils"></i> Proposez un restaurant</a> </li>
-            <li><a href="#"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a></li>
-            <li><a href="#">Mentions légales</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        alt="Logo du site Ohmyfood"
+    />
+    <ul>
+        <li>
+        <a href="#"
+            ><i class="fa-solid fa-utensils"></i> Proposez un restaurant</a
+        >
+        </li>
+        <li>
+        <a href="#"
+            ><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a
+        >
+        </li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
     </footer>
-  </body>
-  <script
+    <script
     src="https://kit.fontawesome.com/ac612d1b0f.js"
     crossorigin="anonymous"
-  ></script>
+    ></script>
+</body>
 </html>
