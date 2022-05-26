@@ -1,0 +1,21 @@
+{
+  "name": "collettevalentin_3_14052022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./assets/sass/main.scss public/css/style.css",
+      "start": "sass ./assets/sass/main.scss public/css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valoucoco/ColletteValentin_3_14052022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Valoucoco/ColletteValentin_3_14052022/issues"
+  },
+  "homepage": "https://github.com/Valoucoco/ColletteValentin_3_14052022#readme"
+}
