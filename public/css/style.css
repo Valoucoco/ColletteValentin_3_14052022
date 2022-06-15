@@ -1,3 +1,158 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
 
+header,
+footer > div {
+  margin: auto !important;
+  max-width: 1180px;
+  padding: 0 15px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+header img {
+  width: 180px;
+  padding: 10px;
+}
+
+footer {
+  width: 100%;
+  background-color: #353535;
+}
+footer div {
+  padding: 15px;
+  filter: invert(1);
+}
+footer img {
+  width: 100px;
+  padding: 5px;
+}
+footer ul li {
+  padding: 5px;
+}
+
+#localisation {
+  background-color: #eaeaea;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+}
+#localisation i {
+  margin-right: 20px;
+}
+
+#exploration {
+  background-color: #f3f3f3;
+  display: flex;
+  padding: 40px 60px;
+  text-align: center;
+  flex-direction: column;
+}
+#exploration h2 {
+  margin-bottom: 10px;
+}
+#exploration a {
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  background: linear-gradient(165deg, #FF79DA 0%, #9356DC 75%);
+  margin: 20px auto;
+  padding: 15px 15px;
+}
+
+#working h2 {
+  margin: 30px 0 20px 15px;
+}
+#working li {
+  display: flex;
+  margin: 20px 30px;
+  padding: 20px 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+#working li span {
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: #9356DC;
+  color: white;
+  font-size: 18px;
+  transform: translate(-30px, 0px);
+}
+#working li p {
+  font-size: 1em;
+}
+#working li i {
+  margin: 0 20px;
+  color: #828282;
+}
+#working li:hover i {
+  color: #9356DC;
+}
+
+#restaurants {
+  background-color: #f3f3f3;
+}
+#restaurants h2 {
+  padding: 50px 0 0 20px;
+}
+#restaurants article {
+  display: flex;
+  justify-content: center;
+}
+#restaurants article figure {
+  width: 90%;
+  margin-top: 20px;
+}
+#restaurants article figure span {
+  width: 20%;
+  height: 30px;
+  display: flex;
+  background-color: #99E2D0;
+  justify-content: center;
+  align-items: center;
+  transform: translate(310px, 45px);
+}
+#restaurants article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+#restaurants article figcaption {
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+  height: 80px;
+  transform: translate(0, -5px);
+  display: flex;
+  justify-content: space-between;
+}
+#restaurants article figcaption a {
+  margin: 17px 0 0 12px;
+  font-size: 1.1em;
+}
+#restaurants article figcaption i {
+  font-size: 1.5em;
+  margin: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */
