@@ -1,0 +1,8 @@
+@mixin main-button {
+border-radius: 30px;
+        color: white;
+        text-align: center;
+        background: linear-gradient(165deg, $secondarycolor 0%, $primarycolor 75%);
+        margin: 20px auto;
+        padding: 15px 15px;
+}

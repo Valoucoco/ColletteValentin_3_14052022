@@ -1,0 +1,36 @@
+#menus_restaurants {
+    main img {
+        width: 100%;
+        object-fit: cover;
+    }
+    #menu {
+        background-color: #f3f3f3;
+        border-radius: 40px 40px 0 0;
+        margin-top: -100px;
+        position: relative;
+    }
+    h1 {
+        padding: 30px 0 0 20px;
+        font-size: 2.2em;
+    }
+    i{
+        padding: 35px 40px 0 0;
+        font-size: 1.4em;
+    }
+    .restaurant_name {
+        display: flex;
+        justify-content: space-between;
+    }
+    section {
+        margin: 40px 10px 0 10px;
+        h2{
+            font-size: 1.2em;
+        }
+        .underline {
+            color: #99E2D0;
+            background-color: #99E2D0;
+            font-size: 3px;
+            padding: 0 0 0 40px;
+        }
+    }
+}

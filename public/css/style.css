@@ -1,9 +1,11 @@
+@import url(_header.scss);
 * {
   box-sizing: border-box;
   text-decoration: none;
   margin: 0;
   padding: 0;
   font-family: "Roboto";
+  max-width: 1920px;
 }
 
 header,
@@ -31,6 +33,12 @@ header img {
   width: 180px;
   padding: 10px;
 }
+header a {
+  font-size: 1.4em;
+  transform: translate(-200px, 0px);
+  display: flex;
+  align-items: center;
+}
 
 footer {
   width: 100%;
@@ -41,7 +49,7 @@ footer div {
   filter: invert(1);
 }
 footer img {
-  width: 100px;
+  width: 105px;
   padding: 5px;
 }
 footer ul li {
@@ -81,6 +89,12 @@ footer ul li {
 #working h2 {
   margin: 30px 0 20px 15px;
 }
+@media screen and (min-width: 767px) {
+  #working ol {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 #working li {
   display: flex;
   margin: 20px 30px;
@@ -90,9 +104,9 @@ footer ul li {
   background-color: #f3f3f3;
 }
 #working li span {
-  border-radius: 20px;
-  width: 20px;
-  height: 20px;
+  border-radius: 30px;
+  width: 25px;
+  height: 25px;
   background-color: #9356DC;
   color: white;
   font-size: 18px;
@@ -102,8 +116,9 @@ footer ul li {
   font-size: 1em;
 }
 #working li i {
-  margin: 0 20px;
+  margin: 0 20px 0 -10px;
   color: #828282;
+  font-size: 1.2em;
 }
 #working li:hover i {
   color: #9356DC;
@@ -111,26 +126,52 @@ footer ul li {
 
 #restaurants {
   background-color: #f3f3f3;
+  padding: 50px 20px 50px 20px;
 }
-#restaurants h2 {
-  padding: 50px 0 0 20px;
+@media screen and (min-width: 767px) {
+  #restaurants .restaurant_grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 #restaurants article {
   display: flex;
   justify-content: center;
+  position: relative;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 767px) {
+  #restaurants article {
+    width: 50%;
+  }
+}
+#restaurants article a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  #restaurants article a {
+    width: 100%;
+    margin: 20px;
+  }
 }
 #restaurants article figure {
-  width: 90%;
-  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
-#restaurants article figure span {
-  width: 20%;
+#restaurants article .new {
+  width: 90px;
   height: 30px;
   display: flex;
   background-color: #99E2D0;
   justify-content: center;
   align-items: center;
-  transform: translate(310px, 45px);
+  transform: translate(-20px, 20px);
+  position: absolute;
 }
 #restaurants article img {
   width: 100%;
@@ -139,6 +180,7 @@ footer ul li {
   border-radius: 15px 15px 0 0;
 }
 #restaurants article figcaption {
+  width: 100%;
   background-color: white;
   border-radius: 0 0 15px 15px;
   height: 80px;
@@ -146,13 +188,47 @@ footer ul li {
   display: flex;
   justify-content: space-between;
 }
-#restaurants article figcaption a {
-  margin: 17px 0 0 12px;
-  font-size: 1.1em;
+#restaurants article figcaption div {
+  margin: 15px 0 0 15px;
 }
 #restaurants article figcaption i {
   font-size: 1.5em;
   margin: 20px;
+}
+
+#menus_restaurants main img {
+  width: 100%;
+  object-fit: cover;
+}
+#menus_restaurants #menu {
+  background-color: #f3f3f3;
+  border-radius: 40px 40px 0 0;
+  margin-top: -100px;
+  position: relative;
+}
+#menus_restaurants h1 {
+  padding: 30px 0 0 20px;
+  font-size: 2.2em;
+}
+#menus_restaurants i {
+  padding: 35px 40px 0 0;
+  font-size: 1.4em;
+}
+#menus_restaurants .restaurant_name {
+  display: flex;
+  justify-content: space-between;
+}
+#menus_restaurants section {
+  margin: 40px 10px 0 10px;
+}
+#menus_restaurants section h2 {
+  font-size: 1.2em;
+}
+#menus_restaurants section .underline {
+  color: #99E2D0;
+  background-color: #99E2D0;
+  font-size: 3px;
+  padding: 0 0 0 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
