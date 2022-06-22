@@ -1,0 +1,56 @@
+.loader {
+    font-size: vw;
+    position : fixed;
+    z-index: 9;
+    top : 0px;
+    height : 100%;
+    width : 100%;
+    color: #99E2D0;
+    background/*-image*/:white/*linear-gradient(to left,#FF79DA 10%,#9356DC )*/;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: drop-all-out 4350ms;
+    animation-fill-mode: forwards;
+    transform-origin: top;
+        span {
+            position: relative;
+            top: 100vw;  
+            display: inline-block;
+            text-transform: uppercase;  
+            animation: drop 4s ease-in-out;
+        }
+        .letter1 {
+            
+            animation: drop 3s ease-in-out;
+            animation-delay: 0.1s;
+        }
+        .letter2 {
+            animation: drop 3s ease-in-out;
+            animation-delay: 0.2s;
+        }
+        .letter3 {
+            animation: drop 3s ease-in-out;
+            animation-delay: 0.3s;
+        }
+        .letter4 {
+            animation: drop 3s ease-in-out;
+            animation-delay: 0.4s;
+        }
+        .letter5 {
+            animation: drop 3s ease-in-out;
+            animation-delay: 0.5s;
+        }
+        .letter6 {
+            animation: drop 3s ease-in-out;
+            animation-delay: 0.6s;
+        }
+        .letter7 {
+            animation: drop 3s ease-in-out;
+            animation-delay: 0.7s;
+        }
+        .letter8 {
+            animation: drop 3s ease-in-out;
+            animation-delay: 0.8s;
+        }
+}

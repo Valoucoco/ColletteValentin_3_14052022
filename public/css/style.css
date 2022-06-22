@@ -1,8 +1,115 @@
-@import url(_header.scss);
+.loader {
+  font-size: vw;
+  position: fixed;
+  z-index: 9;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  color: #99E2D0;
+  background/*-image*/: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: drop-all-out 4350ms;
+  animation-fill-mode: forwards;
+  transform-origin: top;
+}
+.loader span {
+  position: relative;
+  top: 100vw;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: drop 4s ease-in-out;
+}
+.loader .letter1 {
+  animation: drop 3s ease-in-out;
+  animation-delay: 0.1s;
+}
+.loader .letter2 {
+  animation: drop 3s ease-in-out;
+  animation-delay: 0.2s;
+}
+.loader .letter3 {
+  animation: drop 3s ease-in-out;
+  animation-delay: 0.3s;
+}
+.loader .letter4 {
+  animation: drop 3s ease-in-out;
+  animation-delay: 0.4s;
+}
+.loader .letter5 {
+  animation: drop 3s ease-in-out;
+  animation-delay: 0.5s;
+}
+.loader .letter6 {
+  animation: drop 3s ease-in-out;
+  animation-delay: 0.6s;
+}
+.loader .letter7 {
+  animation: drop 3s ease-in-out;
+  animation-delay: 0.7s;
+}
+.loader .letter8 {
+  animation: drop 3s ease-in-out;
+  animation-delay: 0.8s;
+}
+
+@keyframes drop {
+  10% {
+    color: #FF79DA;
+    opacity: 1;
+    font-size: 1em;
+    transform: rotateZ(10deg);
+  }
+  20% {
+    color: #99E2D0;
+    opacity: 1;
+    font-size: 1em;
+    top: 0.5vw;
+    transform: rotateZ(-10deg);
+  }
+  40% {
+    color: #9356DC;
+    opacity: 1;
+    font-size: 1em;
+    top: 0.5vw;
+    transform: rotateZ(10deg);
+  }
+  60% {
+    color: #FF79DA;
+    opacity: 1;
+    font-size: 1em;
+    top: 0.5vw;
+    transform: rotateZ(-10deg);
+  }
+  80% {
+    color: #99E2D0;
+    opacity: 1;
+    font-size: 1em;
+    transform: rotateZ(10deg);
+  }
+  100% {
+    color: #9356DC;
+    opacity: 1;
+    font-size: 1em;
+    top: 0.5vw;
+  }
+}
+@keyframes drop-all-out {
+  0% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 * {
   box-sizing: border-box;
   text-decoration: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "Roboto";
   max-width: 1920px;
