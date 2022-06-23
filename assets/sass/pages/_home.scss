@@ -28,7 +28,7 @@
     ol {
         @media screen and (min-width: 767px) {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
         }
     }
     li {
@@ -37,7 +37,11 @@
         padding: 20px 20px;
         border-radius: 15px;
         text-align: center;
+        width: 300px;
         background-color: $background2;
+        @media screen and (min-width: 767px) {
+            margin: 20px 15px;
+        }
         span {
             border-radius: 30px;
             width: 25px;
@@ -49,9 +53,10 @@
         }
         p {
             font-size: 1em;
+            max-width: 180px;
         }
         i {
-            margin: 0 20px 0 -10px;
+            margin: 0 10px 0 -10px;
             color: #828282;
             font-size: 1.2em;
         }

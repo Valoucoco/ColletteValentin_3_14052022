@@ -24,18 +24,23 @@
         opacity: 1;
         font-size: 1em;
         top: 0.5vw;
-        transform: rotateZ(-10deg);
     }
     80% {
         color: #99E2D0;
         opacity: 1;
-        font-size: 1em;
+        font-size: 1.5em;
         transform: rotateZ(10deg);
+    }
+    99% {
+        color: #9356DC;
+        opacity: 1;
+        font-size: 0.5em;
+        top: 0.5vw
     }
     100% {
         color: #9356DC;
-        opacity: 1;
-        font-size: 1em;
+        opacity: 0;
+        font-size: 0.5em;
         top: 0.5vw
     }
 }
