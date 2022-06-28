@@ -10,26 +10,23 @@ header {
     margin: auto !important;
     max-width: 1180px;
     padding: 0 15px;
-}
-li {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
-header {
     width: 100%;
     display: flex;
-    justify-content: center;
+    position: relative;
     img {
         width: 180px;
         padding: 10px;
     }
-    a{
+    li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: black;
         font-size: 1.4em;
-        transform: translate(-200px, 0px);
-        display: flex;
+        width: 90px;
+        height: 30px;
         align-items: center;
+        position: absolute;
     }
 }

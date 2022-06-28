@@ -3,15 +3,19 @@ footer {
     background-color: $footercolor;
     div{
         padding: 15px;
-        filter: invert(1);
     }
     img {
         width: 105px;
         padding: 5px;
+        filter: invert(1);
     }
     ul{
         li{
             padding: 5px;
+            list-style-type: none;
+            a {
+                color: white;
+            }
         }
     }
 }
