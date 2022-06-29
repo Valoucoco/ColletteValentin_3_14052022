@@ -128,6 +128,9 @@
     opacity: 50%;
     transform: scale(1);
   }
+  90% {
+    opacity: 75%;
+  }
   100% {
     transform: scale(1);
   }
@@ -161,9 +164,10 @@ header a {
   color: black;
   font-size: 1.4em;
   width: 90px;
-  height: 30px;
-  align-items: center;
+  height: 50px;
   position: absolute;
+  display: flex;
+  align-items: center;
 }
 
 footer {
@@ -224,6 +228,7 @@ footer ul li a {
   #working ol {
     display: flex;
     flex-wrap: nowrap;
+    margin: 0 0 0 10px;
   }
 }
 #working li {
@@ -234,6 +239,10 @@ footer ul li a {
   text-align: center;
   width: 300px;
   background-color: #f3f3f3;
+}
+#working li:hover {
+  background-color: #eaeaea;
+  transition: 0.5s;
 }
 @media screen and (min-width: 767px) {
   #working li {
@@ -247,7 +256,7 @@ footer ul li a {
   background-color: #9356DC;
   color: white;
   font-size: 18px;
-  transform: translate(-30px, 0px);
+  transform: translate(-40px, 0px);
 }
 #working li p {
   font-size: 1em;
@@ -326,13 +335,27 @@ footer ul li a {
   transform: translate(0, -5px);
   display: flex;
   justify-content: space-between;
+  position: relative;
+  /*
+  .fa-solid {
+      opacity: 0;
+      color: linear-gradient(90deg, #e72c83 0%,#a742c6 100%);
+      &:hover {
+          opacity: 100%;
+          transition: 0.3s;
+      }
+  }*/
 }
 #restaurants article figcaption div {
   margin: 15px 0 0 15px;
 }
-#restaurants article figcaption i {
+#restaurants article figcaption .fa-regular {
   font-size: 1.5em;
-  margin: 20px;
+  margin: 25px;
+}
+#restaurants article figcaption .fa-regular:hover {
+  opacity: 0%;
+  transition: 0.3s;
 }
 
 #menus_restaurants img {
@@ -345,43 +368,67 @@ footer ul li a {
   border-radius: 40px 40px 0 0;
   margin-top: -100px;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media screen and (max-width: 940px) {
+  #menus_restaurants #menu {
+    justify-content: center;
+  }
 }
 #menus_restaurants #menu h1 {
   padding: 30px 0 0 20px;
   font-size: 2.2em;
   font-family: "Shrikhand", cursive;
 }
-#menus_restaurants #menu i {
+#menus_restaurants #menu .fa-heart {
   padding: 35px 40px 0 0;
   font-size: 1.4em;
-  z-index: 1;
 }
 #menus_restaurants #menu .restaurant_name {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
-#menus_restaurants #menu section {
+#menus_restaurants #menu .food-section {
   margin: 40px 10px 0 10px;
+  min-width: 450px;
 }
-#menus_restaurants #menu section h2 {
+@media screen and (min-width: 767px) {
+  #menus_restaurants #menu .food-section {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 940px) {
+  #menus_restaurants #menu .food-section {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#menus_restaurants #menu .food-section h2 {
   font-size: 1.2em;
+  opacity: 60%;
 }
-#menus_restaurants #menu section .underline {
+#menus_restaurants #menu .food-section .underline {
   color: #99E2D0;
   background-color: #99E2D0;
   font-size: 3px;
   padding: 0 0 0 40px;
 }
 #menus_restaurants #menu article {
-  width: 100%;
+  width: 450px;
   height: 80px;
   margin: 10px 0 15px 0;
   display: flex;
   align-items: center;
-  padding: 10px 10px;
   position: relative;
   border-radius: 20px;
   box-shadow: 0px 5px 10px 5px #dbdbdb;
+  overflow: hidden;
 }
 #menus_restaurants #menu article:nth-of-type(1) {
   animation: hide 0.5s;
@@ -393,11 +440,48 @@ footer ul li a {
   animation: hide 0.9s;
 }
 #menus_restaurants #menu article div {
-  width: 80%;
+  width: 100%;
+  padding: 10px 20px;
 }
-#menus_restaurants #menu article span {
+#menus_restaurants #menu article .price {
   font-weight: bold;
-  margin-top: 30px;
+  margin: 30px 10px 0 0;
+  position: absolute;
+  transform: translateX(400px);
+}
+#menus_restaurants #menu article .menu-selection {
+  cursor: pointer;
+  background-color: #99E2D0;
+  width: 70px;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  transform: translateX(450px);
+}
+#menus_restaurants #menu article .menu-selection i {
+  color: white;
+  font-size: 2em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#menus_restaurants #menu article:hover {
+  transition: 1s;
+}
+#menus_restaurants #menu article:hover .menu-selection {
+  position: absolute;
+  transform: translateX(380px);
+  transition: 0.7s;
+}
+#menus_restaurants #menu article:hover i {
+  transform: rotateZ(-360deg);
+  transition: 0.7s;
+}
+#menus_restaurants #menu article:hover .price {
+  transition: 0.5s;
+  transform: translateX(340px);
 }
 #menus_restaurants .button {
   border-radius: 30px;
