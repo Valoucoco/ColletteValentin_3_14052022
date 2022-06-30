@@ -7,16 +7,12 @@
     <title>Ohmyfood</title>
     <meta
       name="description"
-      content="Ohmyfood, reservez le menu qui vous convient."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/normalize.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+      content="Ohmyfood, reservez le menu qui vous convient."/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/style.css" />
   </head>
   <body>
     <header>
@@ -26,34 +22,45 @@
       />
     </header>
     <main>
+      <!--<div class="loader">
+        <h1>
+          <img src="./assets/images/logo/fork-clipart-animation-7-3172905331.gif" alt="logo d'une fourchette piquant un citron">
+          <span class="letter1">O</span>  
+          <span class="letter2">H</span>  
+          <span class="letter3">M</span>  
+          <span class="letter4">Y</span>  
+          <span class="letter5">F</span>  
+          <span class="letter6">O</span>  
+          <span class="letter7">O</span>  
+          <span class="letter8">D</span>
+        </h1>
+      </div>-->
       <div id="localisation">
-        <label for="search"><i class="fa-solid fa-location-dot"></i></label>
-        <input
-          type="search"
-          id="search"
-          name="City"
-          placeholder="Paris, Belleville"
-        />
+          
+        <p><i class="fa-solid fa-location-dot"></i> Paris, Belleville</p>
       </div>
       <section id="exploration">
         <h2>Réservez le menu qui vous convient</h2>
         <p>
           Découvrez des restaurants d'exception, séléctionnés par nos soins.
         </p>
-        <a href="#">Explorer nos restaurants</a>
+        <a href="#" class="button">Explorer nos restaurants</a>
       </section>
       <section id="working">
         <h2>Fonctionnement</h2>
         <ol>
           <li>
+            <span>1</span>
             <i class="fa-solid fa-mobile-screen-button"></i>
             <p>Choisissez un restaurant</p>
           </li>
           <li>
-            <i class="fa-light fa-list"></i>
+            <span>2</span>
+            <i class="fa-list-ul fas tuto__icon"></i>
             <p>Composez votre menu</p>
           </li>
           <li>
+            <span>3</span>
             <i class="fa-solid fa-store"></i>
             <p>Dégustez au restaurant</p>
           </li>
@@ -61,74 +68,78 @@
       </section>
       <section id="restaurants">
         <h2>Restaurants</h2>
-        <article>
-          <figure>
-            <a href="#">
-              <img
-                src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                alt="Une assiette gastronomique du restaurant La palette du goût à Ménilmontant."
-              />
+        <div class="restaurant_grid">
+          <article>
+            <a href="./pages/la-palette-du-gout.html">
+            <figure>
+                <div class="new">Nouveau</div>
+                <img
+                  src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                  alt="Une assiette gastronomique du restaurant La palette du goût à Ménilmontant."
+                />
+              <figcaption>
+                <div>
+                  <h3>La palette du goût</h3>
+                  <p>Ménilmontant</p>
+                </div>
+                <i class="far fa-heart fa-2x" aria-hidden="true"></i>
+                </figcaption>
+              </figure>
             </a>
-            <figcaption>
-              <a href="#">
-                <h3>La palette du goût</h3>
-                <p>Ménilmontant</p>
-              </a>
-              <i class="fa-regular fa-heart"></i>
-            </figcaption>
-          </figure>
-        </article>
-        <article>
-          <figure>
-            <a href="#">
-              <img
-                src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                alt="Une assiette d'un plat en sauce familial du restaurant La note enchantée à Charonne."
-              />
+          </article>
+          <article>
+            <a href="./pages/la-note-enchantee.html">
+            <figure>
+                <p class="new">Nouveau</p>
+                <img
+                  src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                  alt="Une assiette d'un plat en sauce familial du restaurant La note enchantée à Charonne."
+                />
+              <figcaption>
+                <div>
+                  <h3>La note enchantée</h3>
+                  <p>Charonne</p>
+                </div>
+                <i class="far fa-heart fa-2x" aria-hidden="true"></i>
+                </figcaption>
+              </figure>
             </a>
-            <figcaption>
-              <a href="#">
-                <h3>La palette du goût</h3>
-                <p>Charonne</p>
-              </a>
-              <i class="fa-regular fa-heart"></i>
-            </figcaption>
-          </figure>
-        </article>
-        <article>
-          <figure>
-            <a href="#">
-              <img
-                src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                alt="Une assiette avec une tartine salade/oeuf poché du restaurant À la française à Cité Rouge."
-              />
+          </article>
+          <article>
+            <a href="./pages/a-la-francaise.html">
+            <figure>
+                <img
+                  src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                  alt="Une assiette avec une tartine salade/oeuf poché du restaurant À la française à Cité Rouge."
+                />
+              <figcaption>
+                <div>
+                  <h3>À la française</h3>
+                  <p>Cité Rouge</p>
+                </div>
+                <i class="far fa-heart fa-2x" aria-hidden="true"></i>
+                </figcaption>
+              </figure>
             </a>
-            <figcaption>
-              <a href="#">
-                <h3>À la française</h3>
-                <p>Cité Rouge</p>
-              </a>
-              <i class="fa-regular fa-heart"></i>
-            </figcaption>
-          </figure>
-        </article>
-        <article>
+          </article>
+          <article>
+          <a href="./pages/">
           <figure>
-            <a href="#">
-              <img
-                src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                alt="Une assiette rectangulaire avec du poisson en sauce et des légumes du restaurant Le délice des sens à Folie-Méricourt."
-              />
+                <img
+                  src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                  alt="Une assiette rectangulaire avec du poisson en sauce et des légumes du restaurant Le délice des sens à Folie-Méricourt."
+                />
+              <figcaption>
+                <div>
+                  <h3>Le délice des sens</h3>
+                  <p>Folie-Méricourt</p>
+                </div>
+                <i class="far fa-heart fa-2x" aria-hidden="true"></i>
+                </figcaption>
+              </figure>
             </a>
-            <figcaption>
-              <a href="#">
-                <h3>Le délice des sens</h3>
-                <p>Folie-Méricourt</p>
-              </a>
-              <i class="fa-regular fa-heart"></i>
-            </figcaption>
-          </figure>
-        </article>
+          </article>
+        </div>
       </section>
     </main>
     <footer>
@@ -149,13 +160,9 @@
             >
           </li>
           <li><a href="#">Mentions légales</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
         </ul>
       </div>
     </footer>
-    <script
-      src="https://kit.fontawesome.com/ac612d1b0f.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

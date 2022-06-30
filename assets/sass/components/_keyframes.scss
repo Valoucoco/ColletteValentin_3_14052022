@@ -1,0 +1,77 @@
+@keyframes drop {
+    10% {
+        color: #FF79DA;
+        opacity: 1;
+        font-size: 1em;
+        transform: rotateZ(10deg);
+    }
+    20% {
+        color: #99E2D0;
+        opacity: 1;
+        font-size: 1em;
+        top: 0.5vw;
+        transform: rotateZ(-10deg);
+    }
+    40% {
+        color: #9356DC;
+        opacity: 1;
+        font-size: 1em;
+        top: 0.5vw;
+        transform: rotateZ(10deg);
+    }
+    60% {
+        color: #FF79DA;
+        opacity: 1;
+        font-size: 1em;
+        top: 0.5vw;
+    }
+    80% {
+        color: #99E2D0;
+        opacity: 1;
+        font-size: 1.5em;
+        transform: rotateZ(10deg);
+    }
+    99% {
+        color: #9356DC;
+        opacity: 1;
+        font-size: 0.5em;
+        top: 0.5vw
+    }
+    100% {
+        color: #9356DC;
+        opacity: 0;
+        font-size: 0.5em;
+        top: 0.5vw
+    }
+}
+@keyframes drop-all-out {
+    0% {
+        transform: scale(1);
+    }
+    90% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+@keyframes hide {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    10% {
+        opacity: 0%;
+        transform: scale(0.5);
+    }
+    80% {
+        opacity: 50%;
+        transform: scale(1);
+    }
+    90% {
+        opacity: 75%;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
