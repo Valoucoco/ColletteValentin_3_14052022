@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Valoucoco/ColletteValentin_3_14052022/issues"
   },
-  "homepage": "https://github.com/Valoucoco/ColletteValentin_3_14052022#readme"
+  "homepage": "https://github.com/Valoucoco/ColletteValentin_3_14052022#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
 }
