@@ -401,8 +401,38 @@ footer ul li a {
   font-family: "Shrikhand", cursive;
 }
 #menus_restaurants #menu .fa-heart {
-  padding: 35px 40px 0 0;
-  font-size: 1.4em;
+  font-size: 1.5em;
+  margin: 40px;
+  position: relative;
+}
+#menus_restaurants #menu .fa-heart:hover {
+  transition: opacity 200ms ease-in-out;
+}
+#menus_restaurants #menu .fa-heart:hover::after {
+  opacity: 0;
+}
+#menus_restaurants #menu .fa-heart:hover::before {
+  opacity: 1;
+}
+#menus_restaurants #menu .fa-heart::after {
+  opacity: 1;
+  font-weight: 100;
+  align-self: center;
+  transition: opacity 400ms ease-in;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "\f004";
+}
+#menus_restaurants #menu .fa-heart::before {
+  opacity: 0;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 400ms ease-out;
+  font-weight: 600;
 }
 #menus_restaurants #menu .restaurant_name {
   display: flex;
