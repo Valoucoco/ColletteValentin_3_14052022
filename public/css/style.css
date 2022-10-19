@@ -7,7 +7,7 @@
   color: #99E2D0;
   background: rgb(242, 242, 243);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   animation: drop-all-out 5000ms;
   animation-fill-mode: forwards;
